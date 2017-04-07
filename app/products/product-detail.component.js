@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+//import {ActivatedRoute} from "@angular/router";
 var ProductDetailComponent = (function () {
     function ProductDetailComponent() {
         this.pageTitle = 'Product Detail';

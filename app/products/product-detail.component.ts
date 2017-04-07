@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
 import {Product} from "./Product";
+//import {ActivatedRoute} from "@angular/router";
 
 @Component({
     moduleId : module.id,
@@ -7,6 +8,6 @@ import {Product} from "./Product";
 })
 
 export class ProductDetailComponent {
-    pageTitle: string = 'Product Detail';
     product : Product;
+    pageTitle: string = 'Product Detail';
 }

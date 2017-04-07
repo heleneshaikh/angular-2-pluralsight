@@ -24,7 +24,6 @@ var ProductService = ProductService_1 = (function () {
     ProductService.prototype.getProducts = function () {
         return this.http.get(this.productUrl)
             .map(function (response) { return response.json(); })
-            .do(function (data) { return console.log(JSON.stringify(data)); }) //peek at the  & display in nicer format
             .catch(ProductService_1.handleError);
     };
     ProductService.handleError = function (error) {
