@@ -26,6 +26,10 @@ var ProductService = ProductService_1 = (function () {
             .map(function (response) { return response.json(); })
             .catch(ProductService_1.handleError);
     };
+    ProductService.prototype.getProduct = function (id) {
+        return this.getProducts()
+            .map(function (products) { return products.find(function (p) { return p.productId === id; }); });
+    };
     ProductService.handleError = function (error) {
         console.error(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');
